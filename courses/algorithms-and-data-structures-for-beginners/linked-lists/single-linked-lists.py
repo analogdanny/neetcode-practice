@@ -38,7 +38,16 @@
 # print(f"cur = {cur}, at end of linked list")
 
 
-### Linked List data structure code
+### Linked List data structure code in O(n)
+# - To improve to O(1) when inserting elements, we'd want the tail pointer
+#   so that we could simply reassign the tail to the new node and connect the 
+#   next point of the previous node.
+#
+# - Other improvements would be having the previous pointer for removing nodes
+#   from or inserting nodes into the middle of the linked lists
+#
+# - Usually you can let the language garbage collector clean up the memory from 
+#   removed elements
 
 class LinkedList:
         
